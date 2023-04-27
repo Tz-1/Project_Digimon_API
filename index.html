@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba de Consolidacion 02</title>
+    <title>File Island (PC02)</title>
     <link rel="icon" href="assets/img/Digivice_tri.webp">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -20,15 +20,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="#" id="index">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="digilist" href="#">Digimons</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Niveles
-                </a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Niveles</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" id="Flist" href="#">Fresh</a></li>
                   <li><hr class="dropdown-divider"></li>
@@ -46,9 +44,14 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="Rdigi" href="#">Tu compañero Digimon</a>
+                <a class="nav-link" id="Rdigi" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Tu compañero Digimon</a>
               </li>
             </ul>
+            <div>
+              <audio controls>
+                <source src = "assets/audio/brave heartDigimon Adventure 8bit.mp3" type = "audio/mpeg">
+              </audio>
+            </div>
             <form class="d-flex">
               <input class="form-control me-2" type="search" id="inputsearch" placeholder="Digimon" aria-label="Search" title="Introduzca el nombre del digimon que desea buscar">
               <button class="btn btn-primary" id="btnsearch" type="submit">Buscar</button>
@@ -57,10 +60,54 @@
         </div>
       </nav>
 
-  <main>
-    <div class="col-auto m-3 mt-5 container-fluid row d-flex justify-content-center text-center" id="files"> 
+  <main class="m-4 fw-bold">
+    <div class="d-flex justify-content-center mb-2">
+      <img src="assets/img/Digimon_main.jpg" alt="Digimon survive main" id="dmain">
     </div>
-  </main>  
+
+    <h1 class="text-center">Digimon</h1>  
+    <hr>
+
+    <p>Digimon (デジモン Dejimon?), término tomado de Digital Monsters (デジタルモンスター Dejitaru monsutā?) literalmente en español Monstruos Digitales, estilizado como DIGIMON, es una franquicia de medios creado por Akiyoshi Hongo que incluye productos como mascotas virtuales, videojuegos, películas, animes, mangas, juguetes y juegos de cartas coleccionables. La saga comenzó en 1997 a partir de una mascota virtual conocida como Digimon Virtual Pet, basado en la franquicia Tamagotchi. Sin embargo, su popularidad aumentó con la emisión en 1999 de una serie de anime (Digimon Adventure) y el lanzamiento de un videojuego titulado Digimon World. La saga Digimon ocupó, en una encuesta realizada en la TV Asahi en 2006, el puesto número 54 de entre los 100 mejores animes de la historia.
+      Modelo de Virtual pet distribuido en el mercado japonés por Bandai, que permitió la popularización de Digimon en Japón y vendió 50 mil unidades en todo el mundo hasta marzo de 2004.
+      El argumento de la saga está basado en un mundo paralelo conocido como Mundo Digital, que está habitado por unas criaturas ficticias llamadas Digimon. Son formas de vida artificial creadas a partir de bits y piezas perdidas de datos de ordenadores, que habitan dentro de los aparatos electrónicos que posean memorias no volátiles. Los Digimon son criados por humanos llamados "Tamers" (niños elegidos en Digimon Adventure y en su secuela Digimon 02) para combatir a los villanos que amenazan con destruir el equilibrio del Mundo Digital.</p>
+    
+    <figure class="d-block text-center">
+      <img src="assets/img/v-pet.png" class="figure-img img-fluid rounded zoom" alt="Tamagotchi">
+      <figcaption class="figure-caption text-center">Una de las tantas version de V-pet que se han vendido.</figcaption>
+    </figure>
+    
+    <p>Dentro de la franquicia Digimon, los Digimon son criaturas digitales que digievolucionan para mejorar su nivel de poder y habilidades con respecto a su anterior forma. Los Digimon se dividen según diferentes tipos o atributos, actuando o cumpliendo un determinado rol (como un programa informático) que pueden ser principalmente de tipo: datos, vacuna o virus. El número de digievoluciones naturales llega hasta seis. Normalmente los digimons habitan en el Mundo Digital, un mundo digital posiblemente ubicado en la red de comunicaciones. Los Digimon absorben información, por ejemplo de diversos enemigos, y, eventualmente digievolucionan o bien, con el paso del tiempo y los sucesos. Los digimon primeros están en etapa Digi-Huevo (que todavía no nacen, pero el cuidado del huevo tiene que ver mucho su digievolución), Etapa Bebé (que no tienen poderes por lo tanto su transformación se hará dándole de comer y con entrenamiento básico), Etapa Bebé II (técnica burbujas/defensa), Etapa Niño (con poderes/técnicas según que clase de digimon sea), Etapa Campeón (ya entrenado y con técnicas poderosas), Etapa Ultra (ultra poderoso y más fuerte que el anterior) y Etapa Mega (mega poderoso, más que el anterior). Debido a que después de digievolucionar su apariencia cambia de acuerdo a su grado, actualmente se han contado más de 2000 especies distintas de Digimon. Las especies resultantes de las digievoluciones difieren según la región donde se hayan criado los Digimon. Además, los Digimon digievolucionan en diversas formas dependiendo de la situación, sin tamers (Entrenadores) o con tamers. Hay muchos Digimon que no llegan al nivel mega debido a que el poder ya es demasiado grande y mueren antes de alcanzarla a menos que tengan un dueño. Algunos Digimon llegan a un poder tan alto al alcanzar su última etapa que se le considera super definitiva.</p>
+    <hr>
+    <br>
+    <p>Esta pagina web fue creada con el fin de poder consumir un API de Digimon. <s>(Un poco obvio, no?)</s> Si deseas ver la lista que se ha conseguido, haz click en "Digimons" en la barra de navegacion.</p>
+
+    <div class="d-flex justify-content-center" style="height: 150px;">
+      <img src="assets/img/momantai.png" class="zoom">
+    </div>
+  </main>
+
+  <section>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-light">
+          <div class="modal-header">
+          <h4 class="modal-title w-100 text-center" id="exampleModalLabel">Tu digi-egg esta eclosionando!</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <img src="assets/img/EGG2.gif" class="" width="">
+          <div class="modal-footer d-grid mx-auto">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quiero ver!</button>
+          </div>
+      </div>
+      </div>
+  </div>
+  </section>
+
+  <section>
+    <div class="col-auto m-3 mt-5 pt-3 container-fluid row d-flex justify-content-center text-center" id="files"> 
+    </div>
+  </section>  
 
   <footer class="text-center">
       <img src="assets/img/lcd_08.gif" class="lcdgif d-none d-lg-inline">

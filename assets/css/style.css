@@ -10,19 +10,36 @@ body{
     background-size: 50px 50px;
     background-repeat: no-repeat;
     background-color: #FF9C0A;
+    font-weight: bold;
 }
 
 .navbar-nav{
     margin-left: 20px;
 }
+
+audio{
+    width: 200px;
+    height: 40px;
+    margin-right: 10px;
+    padding-top: 10px;
+
+}
+
+#dmain{
+    width: 1024px;
+    height: 576px;
+    border-style: solid;
+    border-color: green;
+}
+
 .zoom{
     transition: transform .2s;
     overflow: hidden;
 }
 .zoom:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
     cursor: pointer;
-    z-index: 2;
+    z-index: 1;
 }
 
 .lcdgif{
@@ -33,6 +50,7 @@ body{
     margin-bottom: -4px;
     font-style: italic;
     font-size: small;
+    color: crimson;
 }
 
 @media (max-width: 992px) {
@@ -50,5 +68,9 @@ body{
 
    .shinka3{
     content: url(../img/lcd_04.gif);
+   }
+
+   #dmain{
+    content: url(../img/digimon_main_3.jpg);
    }
 }
