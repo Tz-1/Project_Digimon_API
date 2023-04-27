@@ -29,7 +29,7 @@ $(document).ready(function(){
         <p>Esta pagina web fue creada con el fin de poder consumir un API de Digimon. <s>(Un poco obvio, no?)</s> Si deseas ver la lista que se ha conseguido, haz click en "Digimons" en la barra de navegacion.</p>
 
         <div class="d-flex justify-content-center" style="height: 150px;">
-            <img src="assets/img/momantai.png" class="zoom">
+            <img src="assets/img/momantai.png" class="zoom" id="momantai">
         </div>`
         )
         
@@ -323,10 +323,8 @@ $(document).ready(function(){
             })  
     })
 
-
-    $("#momantai").dblclick(function(){
+    $(document).on('dblclick', '#momantai', function(){
         alert("Momantaaaaaaaaai ʕᵔᴥᵔʔ")
-
     })
 
 })
