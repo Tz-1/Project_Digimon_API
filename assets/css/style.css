@@ -1,5 +1,32 @@
 body{
-    background-image: url("../img/descarga.png");
+    background-image: url("../img/Fondo.png");
     background-position: center;
-    background-size: 80%;
+    background-size: 1980px 1080px;
 }
+
+.navbar{
+    background-image: url("../img/Icon_nav_bar.png");
+    background-position: center;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-color: #FF9C0A;
+}
+
+.navbar-nav{
+    margin-left: 20px;
+}
+.zoom{
+    transition: transform .2s;
+    overflow: hidden;
+}
+.zoom:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 2;
+}
+
+@media (max-width: 992px) {
+    .navbar{
+       background-image: url(../img/Icon_nav_bar_2.png);
+     }
+   }
