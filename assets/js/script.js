@@ -323,4 +323,10 @@ $(document).ready(function(){
             })  
     })
 
+
+    $("#momantai").dblclick(function(){
+        alert("Momantaaaaaaaaai ʕᵔᴥᵔʔ")
+
+    })
+
 })
