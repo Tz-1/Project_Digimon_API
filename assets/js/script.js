@@ -277,7 +277,7 @@ $(document).ready(function(){
                 } 
 
                 else {
-                    alert("Escribiste mal el nombre o el digimon no se encuentra en esta lista.")
+                    alert("Escribiste mal el nombre o el Digimon no se encuentra en esta lista.")
                 }
             })  
     })

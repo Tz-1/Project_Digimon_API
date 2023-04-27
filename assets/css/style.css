@@ -25,8 +25,30 @@ body{
     z-index: 2;
 }
 
+.lcdgif{
+    height: 70px;
+}
+
+.ftext{
+    margin-bottom: -4px;
+    font-style: italic;
+    font-size: small;
+}
+
 @media (max-width: 992px) {
     .navbar{
        background-image: url(../img/Icon_nav_bar_2.png);
      }
+   
+   .shinka1{
+    content: url(../img/lcd_11.gif);
    }
+
+   .shinka2{
+    content: url(../img/lcd_03.gif);
+   }
+
+   .shinka3{
+    content: url(../img/lcd_04.gif);
+   }
+}
