@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+/* Funcion de pagina principal o inico*/
     $("#index").click(function(){
 
         $("#files").html("")
@@ -35,7 +36,7 @@ $(document).ready(function(){
         
     })
 
-    
+/*Funcion de listado de los Digimons a traves de la API*/
     $("#digilist").click(function(){
 
         $("main").html("")
@@ -64,7 +65,7 @@ $(document).ready(function(){
             })  
     })
 
-
+/*Lista de Digimon nivel Fresh*/
     $("#Flist").click(function(){
 
         $("main").html("")
@@ -93,6 +94,7 @@ $(document).ready(function(){
             }) 
     })
 
+/*Lista de Digimon nivel Training*/
     $("#Tlist").click(function(){
         $("main").html("")
 
@@ -120,7 +122,7 @@ $(document).ready(function(){
             }) 
     })
 
-    
+/*Lista de Digimon nivel Rookie*/
     $("#Rlist").click(function(){
         $("main").html("")
 
@@ -148,7 +150,7 @@ $(document).ready(function(){
             }) 
     })
 
-    
+/*Lista de Digimon nivel Champion*/
     $("#Clist").click(function(){
         $("main").html("")
 
@@ -176,7 +178,7 @@ $(document).ready(function(){
             }) 
     })
 
-    
+/*Lista de Digimon nivel Ultimate*/
     $("#Ulist").click(function(){
         $("main").html("")
 
@@ -203,7 +205,7 @@ $(document).ready(function(){
             }) 
     })
 
-    
+/*Lista de Digimon nivel Armor*/
     $("#Alist").click(function(){
         $("main").html("")
 
@@ -230,7 +232,7 @@ $(document).ready(function(){
             }) 
     })
 
-    
+/*Lista de Digimon nivel Mega*/
     $("#Mlist").click(function(){
         $("main").html("")
 
@@ -258,6 +260,7 @@ $(document).ready(function(){
             }) 
     })
 
+/*Funcion para obtener un Digimon al azar de la API*/
     $("#Rdigi").click(function(){
         $("main").html("")
         
@@ -289,8 +292,9 @@ $(document).ready(function(){
             })  
     })
 
+/*Funcion para buscar Digimon por nombre a traves de un valor añadido por la busqueda*/
     $("#btnsearch").click(function(event){
-        event.preventDefault();
+        event.preventDefault(); /*Evento que previene la recarga de la pagina web*/
 
         var dname = $("#inputsearch").val()
 
@@ -323,8 +327,14 @@ $(document).ready(function(){
             })  
     })
 
+/*"No te preocupes, todo se solucionara, tomalo con calma"*/
     $(document).on('dblclick', '#momantai', function(){
         alert("Momantaaaaaaaaai ʕᵔᴥᵔʔ")
+    })
+
+/*Digivice sonido*/
+    $(".lcdgif").click(function(){
+        $("#digiviceboop")[0].play();
     })
 
 })

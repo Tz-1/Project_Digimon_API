@@ -46,6 +46,10 @@ audio{
     height: 70px;
 }
 
+.lcdgif:hover{
+    cursor: pointer;
+}
+
 .ftext{
     margin-bottom: -4px;
     font-style: italic;
